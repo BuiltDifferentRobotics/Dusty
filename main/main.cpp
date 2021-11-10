@@ -1,5 +1,5 @@
 #include "Serial_IO/wiringSerial.h"
-#include "Serial_IO/wiringPi.h"
+//#include "Serial_IO/wiringPi.h"
 #include "nlohmann/json.hpp"
 #include<unistd.h>
 #include <stdio.h>
