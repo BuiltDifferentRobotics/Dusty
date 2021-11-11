@@ -1,5 +1,5 @@
 #include "Serial_IO/wiringSerial.h"
-//#include "Serial_IO/wiringPi.h"
+#include "Serial_IO/wiringPi.h"
 #include "nlohmann/json.hpp"
 #include<unistd.h>
 #include <stdio.h>
@@ -37,12 +37,12 @@ int main() {
         fprintf (stderr, "Unable to open serial device: %s\n", strerror (errno)) ;
         return 1 ;
     }
-/*
+
     if (wiringPiSetup() == -1) {
         fprintf (stdout, "Unable to start wiringPi: %s\n", strerror (errno)) ;
         return 1 ;
     }
-*/
+
     serialFlush(fd);
 
     while(true) {
